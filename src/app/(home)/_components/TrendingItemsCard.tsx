@@ -10,7 +10,7 @@ import { TfiReload } from "react-icons/tfi";
 import { ImEye } from "react-icons/im";
 
 interface TrendingItemsCardProps {
-  rating?: number | null; // Optional rating prop, can be null
+  rating?: number | boolean | null; // Optional rating prop, can be null
   img?: string; // Optional image URL
 }
 
@@ -83,7 +83,7 @@ const TrendingItemsCard: React.FC<TrendingItemsCardProps> = ({
           <div>
             <Rating
               style={{ maxWidth: 60, margin: "auto" }}
-              value={rating}
+              value={2}
               itemStyles={myStyle}
               readOnly={true}
             />

@@ -4,7 +4,7 @@ import React from "react";
 // Define the props interface for the component
 interface HeroCardProps {
   img: string;
-  height: string;
+  height: string | number;
 }
 
 const HeroCard: React.FC<HeroCardProps> = ({ img, height }) => {

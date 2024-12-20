@@ -1,3 +1,72 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* scroll thumb */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #d6d6d6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #777777;
+}
+
+@layer components {
+  .btn {
+    @apply border font-semibold bg-orange-900;
+  }
+
+  .btn-red {
+    @apply py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border font-semibold text-white focus:outline-none focus:ring-2 focus:ring-offset-2 transition-all text-sm;
+  }
+
+  .btn-primary {
+    @apply bg-primary px-4 py-2 uppercase font-semibold;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary px-5 py-[11px] font-bold text-white uppercase text-[16px] rounded-tr-[3px] rounded-tl-[3px];
+  }
+
+  .animate-expanded {
+    @apply absolute w-0 left-1/2 -translate-x-1/2 h-full opacity-0 bg-black transition-all group-hover:w-full group-hover:opacity-35 group-hover:duration-500;
+  }
+
+  .product-name {
+    @apply text-[14px] leading-[18px] text-[#222222] capitalize font-normal hover:text-[#Ff3e20];
+  }
+
+  .product-price {
+    @apply text-[16px] font-bold text-[#Ff3e20];
+  }
+
+  .left-product-title {
+    @apply text-[16px] font-bold uppercase border-b-2 border-[#EEEEEE];
+  }
+}
+
+@layer base {
+  h1 {
+    @apply text-4xl;
+  }
+}
+
+@layer utilities {
+  .s-height {
+    max-height: 20px;
+  }
+}
+
+@keyframes horizontalWave {
+  from {
+    left: -8px;
+  }
+
+  to {
+    left: 0;
+  }
+}

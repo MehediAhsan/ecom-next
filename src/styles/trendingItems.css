@@ -1,0 +1,49 @@
+.trend .swiper {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(255, 255, 255);
+}
+
+.trend .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #ffffff;
+    height: calc((100% - 30px) / 2) !important;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trend .swiper-button-prev {
+    padding: 13px;
+    border: 2px solid #C3C3C3;
+    background-color: white;
+    border-radius: 50%;
+    top: calc(50% - var(--swiper-navigation-size)/2) !important;
+    left: -10px !important;
+    color: #C3C3C3 !important;
+    --swiper-navigation-size: 15px !important;
+}
+
+.trend .swiper-button-next {
+    padding: 13px;
+    border: 2px solid #C3C3C3;
+    background-color: white;
+    border-radius: 50%;
+    top: calc(50% - var(--swiper-navigation-size)/2) !important;
+    right: -10px !important;
+    color: #C3C3C3 !important;
+    --swiper-navigation-size: 15px !important;
+}
+
+.trend .swiper-button-prev:hover {
+    color: #EFC378;
+}
+
+.trend .swiper-button-next:hover {
+    color: #EFC378;
+}

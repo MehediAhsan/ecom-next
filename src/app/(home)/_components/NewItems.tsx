@@ -37,7 +37,7 @@ const NewItems = () => {
                     <button className='btn-secondary'>New Items</button>
                     <ul className='lg:flex gap-5 text-sm mb-[2px] hidden'>
                         {
-                            categories.map((category) => <li className='group cursor-pointer hover:text-primary'>
+                            categories.map((category, i) => <li key={i} className='group cursor-pointer hover:text-primary'>
                                 {category.name}
                                 <div className='h-[2px] mt-2 w-0 bg-primary group-hover:w-full transition-all duration-500'></div>
                             </li>
@@ -52,7 +52,7 @@ const NewItems = () => {
             <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4'>
                 {
                     items.map((item, i) => (
-                        <div className={`${i === 0 && " md:col-span-2"}`}>
+                        <div key={i} className={`${i === 0 && " md:col-span-2"}`}>
                             <TrendingItemsCard key={item} />
                         </div>
                     ))
