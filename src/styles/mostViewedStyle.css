@@ -1,0 +1,68 @@
+.product .swiper-button-prev {
+  padding: 13px;
+  border: 2px solid #c3c3c3;
+  background-color: white;
+  border-radius: 50%;
+  top: 8px !important;
+  left: 93% !important;
+  color: #c3c3c3 !important;
+  --swiper-navigation-size: 12px !important;
+}
+
+.product .swiper-button-next {
+  padding: 13px;
+  border: 2px solid #c3c3c3;
+  background-color: white;
+  border-radius: 50%;
+  top: 8px !important;
+  right: 0% !important;
+  color: #c3c3c3 !important;
+  --swiper-navigation-size: 12px !important;
+}
+
+.product .swiper-button-prev:hover {
+  color: #efc378;
+}
+
+.product .swiper-button-next:hover {
+  color: #efc378;
+}
+
+@media only screen and (max-width: 500px) {
+  .product .swiper-button-prev {
+    left: 75% !important;
+  }
+
+  .product .swiper-button-next {
+    left: 90% !important;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .product .swiper-button-prev {
+    left: 83% !important;
+  }
+
+  .product .swiper-button-next {
+    left: 93% !important;
+  }
+}
+@media only screen and (min-width: 720px) {
+  .product .swiper-button-prev {
+    left: 88% !important;
+  }
+
+  .product .swiper-button-next {
+    left: 95% !important;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .product .swiper-button-prev {
+    left: 93% !important;
+  }
+
+  .product .swiper-button-next {
+    left: 97% !important;
+  }
+}
