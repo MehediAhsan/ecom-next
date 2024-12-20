@@ -8,7 +8,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-import '../../style/clientStyle.css';
+import '../../../styles/clientStyle.css';
 
 // Import required modules
 import { Navigation } from 'swiper/modules';

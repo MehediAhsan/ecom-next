@@ -3,7 +3,7 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import DailyDealCard from './DailyDealCard';
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
-import '../../style/dailyDeals.css';
+import '../../../styles/dailyDeals.css';
 
 const DailyDeals = () => {
     const items = [1, 2, 3, 4, 5]

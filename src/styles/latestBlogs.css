@@ -1,0 +1,26 @@
+.blogsSwiper .swiper-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40%;
+  margin-left: 30%;
+  top: -200px;
+}
+
+.blogsSwiper .swiper-pagination-bullet {
+  background-color: #232f3e;
+  border-radius: 6px;
+  margin: 0 5px;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.blogsSwiper .swiper-pagination-bullet:hover {
+  background-color: #ec2000;
+}
+
+.blogsSwiper .swiper-pagination-bullet-active {
+  background-color: #ec2000 !important;
+  width: 32px;
+  height: 6px;
+}

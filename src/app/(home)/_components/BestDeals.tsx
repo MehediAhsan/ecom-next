@@ -5,7 +5,7 @@ import { Autoplay, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import Image from 'next/image';
-import '../../style/bestDeals.css';
+import '../../../styles/bestDeals.css';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
